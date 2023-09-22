@@ -11,6 +11,6 @@
 
 - [Branch](https://github.com/apej88/TIL/blob/master/Git/branch.md)
 
-- [branch](https://github.com/apej88/TIL/blob/master/Git/markdown.md)
+- [markdown](https://github.com/apej88/TIL/blob/master/Git/markdown.md)
 
 ### HTML
