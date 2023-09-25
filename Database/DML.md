@@ -42,9 +42,11 @@ DELETE FROM product;
 - 테이블에서 조건에 맞는 행 검색
 
 - SELECT 문 기본 형식
+
 ![SELECT](image/select.png)
 
 - SELECT 기능
+
 ![SELECT_FUN](image/select_fun.png)
 
 #### 중복 제거
@@ -63,6 +65,7 @@ DELETE FROM product;
 ![WHERE](image/where.png)
 
 - 패턴 매칭 (LIKE)
+
 ![pattern1](image/pattern1.png)
 
 ![pattern2](image/pattern2.png)

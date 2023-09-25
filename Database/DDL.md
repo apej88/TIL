@@ -32,6 +32,7 @@ CREATE TABLE 테이블명(
 ```
 
 - 제약조건
+
 ![제약조건](image/constraints.png)
 
 #### PRIMARY KEY 제약조건
@@ -41,9 +42,11 @@ CREATE TABLE 테이블명(
 - 빈 값 안 됨
 
 - 제약 조건 방법 1
+
 ![기본키제약조건1](image/PK_constraint1.png)
 
 - 제약 조건 방법 2
+
 ![기본키제약조건2](image/PK_constraint2.png)
 
 #### 복합키 설정 
