@@ -53,6 +53,7 @@ SELECT * FROM client_view;
 ```
 
 뷰의 구조 변경 : ALTER 문 사용
+
 ```sql
 ALTER VIEW client_view
 AS

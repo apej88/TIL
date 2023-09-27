@@ -21,6 +21,5 @@ END $$
 DELIMITER ;
 
 -- 저장 프로시저 호출
-CALL clientProc( );
+CALL clientProc();
 ```
-

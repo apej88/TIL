@@ -99,6 +99,7 @@ INSERT INTO movie VALUES('1', '쉰들러 리스트', '스필버그', '리암 니
 CREATE TABLE 새 테이블명 AS 
 SELECT 복사할 열 FROM 원본 테이블명 [WHERE절]
 ```
+
 - 주의!
     - 제약조건(기본키/외래키) 복사 안 됨
     - 복사 후 제약조건 설정해야 함
