@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 속성</title>
+    <style>
+        div#parent {
+            width: 200px;
+            height: 300px;
+            border: solid 5px #000000;
+            position: relative;
+            /* margin: 50px 0 0 50px; */
+            /* top right bottom left */
+        }
+        #boxA, #boxB, #boxC {
+            width: 80px;
+            height: 80px;
+        }
+        #boxA {background-color: red;}
+        #boxB {background-color: blue;}
+        #boxC {background-color: blueviolet;}
+        /* boxB에 relative 위치 지정 */
+        /* relative : 디폴트인 static 기준 */
+        /*
+        #boxB {
+            position: relative;
+            top:20px;
+            left:30px;
+        }*/
+
+        /* boxB에 absolute 위치 지정 */
+        /* 부모 요소인 parent에 위치를 지정하지 않았기 때문에 브라우저 화면(body) 기준 */
+        /*
+        #boxB {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }*/
+
+        /* 부모 요소인 parent 안으로 배치 */
+        /* parent에 position을 relative로 설정 */
+        /* boxB는 absolute로 설정 */
+        #boxB {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+
+        /* parent에 position
+            - relative/absolute 차이 : 문서의 기본 여백 차이
+        */
+
+        #fixedBox {
+            position:fixed;
+            width:50px;
+            height:50px;
+            background-color: greenyellow;
+            top:400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="boxA">A</div>
+        <div id="boxB">B</div>
+        <div id="boxC">C</div>
+    </div>
+
+    <div id="fixedBox"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,38 @@
+#wrap {
+    margin: 0 auto;
+    width: 1024px;
+    text-align: center;
+}
+#mainmenu > ul > li {
+    width: 25%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    display:inline-block;
+    float:left;
+    
+}
+#mainmenu li:hover{
+    background-color: yellow;
+    color: red;
+}
+#menu {
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 350px;
+}
+#menu table {
+    text-align: left;
+}
+#menu ul {list-style-type:none;}
+div table {
+    margin: 0 auto;
+}
+#item table th {
+    color: blue;
+}
+#item table td {
+    color: orange;
+    text-align: center;
+}
