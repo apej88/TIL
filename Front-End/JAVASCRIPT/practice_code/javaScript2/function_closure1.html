@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 클로저 예제1</title>
+    <script>
+        // 전역변수를 사용할 때 클로저 예제
+        let count = 0;
+        // count는 전역변수로 선언
+
+        // conut 값을 1씩 증가시키는 함수
+        function increase(){
+            return ++count;
+        }
+
+        console.log(increase());
+        console.log(increase());
+        console.log(increase());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

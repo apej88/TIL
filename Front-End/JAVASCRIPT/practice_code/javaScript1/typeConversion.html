@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>형 변환</title>
+    <script>
+/*
+        // 형변환 하지 않은 경우 : 문자로 입력
+        let num1 = prompt("숫자1 입력");
+        let num2 = prompt("숫자2 입력");
+        
+        // 산술 연산
+        document.write(num1 + num2 + "<br>");
+        document.write(num1 * num2 + "<br>");
+
+        // 문자열에서는 *라는 개념이 없어서 자동으로 숫자로 타입 변환이 일어났다.
+        // 문자열에서 +가 있기 때문에 우선적으로 문자열 +가 실행되었다.
+*/
+
+        // parseInt는 정수의 값으로 변환
+        // Number은 실수의 값으로 변환
+/*
+        // 형변환
+        let num1 = parseInt(prompt("숫자1 입력"));
+        let num2 = parseInt(prompt("숫자2 입력"));        
+
+        // 산술 연산
+        document.write(num1 + num2 + "<br>");
+        document.write(num1 * num2 + "<br>");
+*/
+        // 형변환
+        let num1 = Number(prompt("숫자1 입력"));
+        let num2 = Number(prompt("숫자2 입력"));        
+
+        // 산술 연산
+        document.write(num1 + num2 + "<br>");
+        document.write(num1 * num2 + "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

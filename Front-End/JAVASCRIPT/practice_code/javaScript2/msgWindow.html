@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window 객체 : setTImeout()</title>
+    <script>
+        function msgWinClose(){
+            window.close();
+            // 현재 창 닫고
+            opener.focus();
+            // 현재 창을 열은 부모창에 포커스
+            // 부모창을 가르키는 객체(opener)
+        }
+    </script>
+</head>
+<!-- 로드된 후 3초 후에 msgWinclose 함수 호출-->
+<body onload = "setTimeout('msgWinClose()', 3000)">
+    공지사항 <br>
+    이 창은 3초 후에 자동으로 닫힙니다.
+</body>
+</html>

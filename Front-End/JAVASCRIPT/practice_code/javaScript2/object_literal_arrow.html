@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정의 객체 : 리터럴 이용2</title>
+    <!-- 화살표 함수에는 this가 존재하지 않는다 -->
+    <script>
+        let person = {
+            name : "홍길동",
+            age : 20,
+            getName : () =>{
+                name = "이몽룡";
+                
+                return this.name;
+            }
+        };
+        console.log(person.getName());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

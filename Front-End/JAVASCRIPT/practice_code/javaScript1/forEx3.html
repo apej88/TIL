@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for 연습문제3</title>
+    <link rel="stylesheet" href="forEx3.css">
+    <script>
+        let sum = 0;
+        document.write("<table border='1'>");
+            // border = '1' 주면 td,th에 border를 넣은 것과 같다.
+        document.write("<tr><th>i</th><th>sum</th></tr>");
+        for(let i = 1 ; i<=10 ; i++){
+            sum += i;
+            document.write("<tr><td>" + i + "</td><td>" + sum + "</td></tr>");
+        }
+        document.write("</table>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

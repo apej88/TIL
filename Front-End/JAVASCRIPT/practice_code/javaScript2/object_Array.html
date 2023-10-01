@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 객체</title>
+    <script>
+        let fruits = new Array("사과", "복숭아", " 포도");
+
+        document.write("모든 요소 출력 : ")
+        for(let i=0 ; i<fruits.length ; i++)
+            document.write(fruits[i] + " ");
+
+        fruits.shift();
+
+        document.write("<br>shift() 후 출력 : ")
+        for(let i=0 ; i<fruits.length ; i++)
+            document.write(fruits[i] + " ");
+
+        fruits.unshift("딸기");
+        document.write("<br>unshift(딸기) 후 출력 : ")
+        for(let i=0 ; i<fruits.length ; i++)
+            document.write(fruits[i] + " ");
+
+        fruits.pop();
+        document.write("<br>pop() 후 출력 : ")
+        for(let i=0 ; i<fruits.length ; i++)
+            document.write(fruits[i] + " ");
+
+        fruits.push("수박");
+        fruits.push("멜론");
+        document.write("<br>push(수박) 후 출력 : ")
+        for(let i=0 ; i<fruits.length ; i++)
+            document.write(fruits[i] + " ");
+
+        fruits.reverse();
+        document.write("<br>reverse() 후 출력 : ")
+        for(let i=0 ; i<fruits.length ; i++)
+            document.write(fruits[i] + " ");
+
+        fruits.sort();
+        document.write("<br>sort() 후 출력 : ")
+        for(let i=0 ; i<fruits.length ; i++)
+            document.write(fruits[i] + " ");
+
+        fruits.splice(2,1,"망고", "오렌지");
+        // [2] 위치의 요소 1개 제거하고 망고, 오렌지 추가
+        document.write("<br>splice() 후 출력 : ")
+        for(let i=0 ; i<fruits.length ; i++)
+            document.write(fruits[i] + " ");
+
+        let newFruits = fruits.slice(1,4);
+        // 1부터 4전까지 배열을 복사함 (1~3)
+        document.write("<br>slice(1,4)로 복사 후 출력 : ")
+        for(let i=0 ; i<newFruits.length ; i++)
+            document.write(newFruits[i] + " ");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+th {
+    width: 100px;
+    background-color: yellow;
+    border: solid 1px black;
+}
+td {
+    text-align: center;
+    border: solid 1px black;
+}
+table {
+    border: solid 1px black;
+}

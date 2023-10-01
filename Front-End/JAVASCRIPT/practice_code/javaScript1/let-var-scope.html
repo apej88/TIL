@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let var scope 차이</title>
+    <script>
+        let sum=0;
+        for(var i=0 ; i<10; i++) {
+            sum = sum + i;
+        }
+        console.log(i); //for 블록 내에 사용 가능
+
+        sum = 0;
+        for(let j=0;j<10;j++){
+            sum = sum + j;
+        }
+        // console.log(j);
+        // j가 정의가 되지 않음. for(블록) 안에서만 가능
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

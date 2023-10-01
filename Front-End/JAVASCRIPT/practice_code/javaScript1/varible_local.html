@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local variable</title>
+    <script>
+        function f1(){
+            let localVar1 = 100;
+            name = "홍";
+            // 함수 f1()안에서만 사용이 가능하다.
+        }
+        function f2(){
+            // f1()에서 선언된 지역변수는 사용불가. : 오류
+            // document.write(localVar1);
+            document.write(name);
+        }
+        f1();
+        f2();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

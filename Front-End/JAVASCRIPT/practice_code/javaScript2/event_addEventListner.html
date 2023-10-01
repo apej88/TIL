@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 리스너</title>
+    <script>
+        window.onload = function(){
+            let greenBtn = document.getElementById('greenBtn');
+            let redBtn = document.getElementById('redBtn');
+            let yellow = document.getElementById('yellowBtn');
+            let blue = document.getElementById('blueBtn');
+            let h2 = document.getElementById('h2');
+            greenBtn.addEventListener('click',function(){
+                h2.style.color = "green";
+            });
+            redBtn.addEventListener('click',()=>{
+                h2.style.color = "red";
+            });
+            yellow.addEventListener('click',()=>{
+                h2.style.color = "yellow";
+            });
+            // 일반 함수 사용
+            blue.addEventListener('click',changeToBlue);
+            // 일반 함수에는 ()가 없다.
+            
+        };
+        function changeToBlue(){
+            let h2 = document.getElementById('h2');
+            h2.style.color = "blue";
+        }
+    </script>
+</head>
+<body>
+    <h2 id="h2">글자 색 변경</h2>
+    <button id="greenBtn">green</button>
+    <button id="redBtn">red</button>
+    <button id="yellowBtn">yellow</button>
+    <button id="blueBtn">blue</button>
+</body>
+</html>

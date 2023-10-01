@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역변수</title>
+    <script>
+        let x=5, y=9; //let 사용한 명시적 선언 : 전역변수
+        total = 0; //let 없이 전언 : 전역변수
+        function f1(){
+            x = x+y;
+            document.write(x + "<br>");
+        }
+        function f2(){
+            total = x+y;
+            document.write(total + "<br>")
+        }
+        let name = "서";
+        f2();
+        f1();
+        f2();
+        document.write("x : "+x);
+        document.write(" total : "+total + "<br>");
+
+        document.write(name + "<br>");
+
+        function showname(){
+            document.write("이름 : " + name);
+        }
+        showname();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

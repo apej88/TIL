@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연산자</title>
+</head>
+<body>
+    <script>
+
+        let count = 0;
+        count++;
+        console.log(count);
+
+        let x = 10;
+        let y = ++x;
+        console.log(y);
+        y = x++;
+        console.log(y);
+
+        // 2. 논리 부정 연산자
+        let a = true;
+        let b = !a;
+        console.log(b);
+
+        // 3. rhksrP dustks
+        let n1 = 10;
+        let n2 = 20;
+
+        console.log(n1<n2);
+        console.log(n1 != n2);
+        console.log(n1 == n2);
+
+        // 4. 논리연산자
+        let num = 9;
+        console.log(num%3 == 0 || num%4 == 0);
+        console.log(num%3 == 0 && num%4 == 0);
+
+        // 5. 3항 연산자
+        let score = 95;
+        let result = (score>60) ? 'PASS' : 'FAIL';
+        console.log(result);
+
+        // 3항 연산자 중첩 사용
+        let grade = (score > 90 ? 'A' : (score > 80) ? 'B' : 'C');
+        console.log(grade);
+
+        // 6. 누적 대입 연산자
+        let sum = 0;
+        let n = 20;
+
+        sum += n;
+        console.log(sum);
+    </script>
+</body>
+</html>

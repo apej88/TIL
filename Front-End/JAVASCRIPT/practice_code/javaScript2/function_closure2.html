@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 클로저 예제2</title>
+    <script>
+        // 익명함수를 사용하였을 때 클로저
+
+        function increase(){
+            let count = 0; // 함수내 지역변수
+
+            return function() {
+                return ++count;
+            }
+        }
+        let count = increase();
+        console.log(count());
+        console.log(count());
+        console.log(count());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

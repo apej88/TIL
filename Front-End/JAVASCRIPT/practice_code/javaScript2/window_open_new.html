@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window open</title>
+    <!-- 새로운 창 열기 -->
+    <script>
+        function showBigImage(){
+            // 화면 가운데 위치
+            let bigWin_width = 699;
+            let bigWin_height = 800;
+            
+            let x = (window.screen.width / 2) - (bigWin_width / 2);
+            let y = (window.screen.height / 2) - (bigWin_height / 2);
+            
+            // 단순히 창 열기
+            window.open("window_bigImage.html","BigWin", "width=699, height = 800, left = " + x + ", top = " + y);
+        }
+        function openNewWindow(){
+            // 새 창 생성한 후, 새 창에 텍스트와 버튼을 출력
+            // 변수로 선언해서 생성
+            let newWindow = window.open("","newWin","width=400, height=150, left=300, top=20");
+            // document 객체의 innerHTML 속성 : 텍스트, HTML 설정하거나 가져오기(반환)
+            newWindow.document.body.innerHTML = "newWin 이름으로 새로 만든 창";
+            newWindow.document.body.innerHTML += "<p><button onclick='window.close()'>닫기</button></p>";
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showBigImage()">Big Image 창 열기</button>
+    <button onclick="openNewWindow()">새 창 열기</button>
+</body>
+</html>

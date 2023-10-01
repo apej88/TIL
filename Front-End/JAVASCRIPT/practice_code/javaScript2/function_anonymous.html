@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>익명함수 예제</title>
+    <script>
+        // 익명 함수 : 변수에 함수 코드 저장.
+        // 익명함수는 함수를 먼저 선언하고 그 후에 실행을 해야된다.
+        // 호이스팅이 되지 않는다.
+        let sum = function(a,b){
+            document.write(a+b + "<br>")
+        };
+        // 익명함수 호출
+        sum(10,20);
+
+        // 반환값이 있는 익명함수
+        let add = function(a,b){
+            return a+b;
+        }
+        document.write(add(10,20));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

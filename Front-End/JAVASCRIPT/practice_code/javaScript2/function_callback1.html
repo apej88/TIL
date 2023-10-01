@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>콜백 함수 예제1</title>
+    <script>
+        // 익명함수 : show() 함수에 전달한 콜백함수
+        let callback = function(){
+            alert("익명함수 입니다.");
+        };
+
+        // 함수를 매개변수로 받을 함수
+        function show(callback){// 매개 변수 명은 임의(a로 해도 상관은 없음)
+            callback();
+        }
+        
+        show(callback); //show() 함수 호출하면서 함수를 인자로 전달
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

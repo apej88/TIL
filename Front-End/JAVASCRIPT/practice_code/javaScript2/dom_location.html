@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM location 예제</title>
+    <script>
+        // ID로 DOM 요소 찾아오기
+        // let box = document.getElementById('box');
+        // 전역변수랑 ID값이 같으면 id값을 불러오지 못할 수 있다.
+        // 그래서 getElementById를 이용하여 ID값을 가져온다.
+        // box.innerHTML = "변경";
+        // (1)잘못된 위치 - 아직 body의 요소가 생성되기 전.
+        
+        // 윈도우 로드 완료 후 자바스크립트 실행.
+        window.onload = function(){
+            let box = document.getElementById('box');
+            box.innerHTML = "변경";
+           };
+        // window.onload = () =>{
+        //     let box = document.getElementById('box');
+        //     box.innerHTML = "변경";
+        // };
+        // 화살표 함수로도 가능
+    </script>
+</head>
+<body>
+    <div id="box">box</div>
+    <!-- <script>
+        let box = document.getElementById('box');
+        box.innerHTML = "변경";
+    </script> -->
+    <!-- (2) 이렇게 실행하면 되긴 함. 근데 이렇게 쓰지는 않음 -->
+</body>
+</html>

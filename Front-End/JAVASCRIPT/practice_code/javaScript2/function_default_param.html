@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 디폴트 매개변수</title>
+    <script>
+        // 디폴트 매개변수가 있는 함수
+        // 값이 전달되지 않으면 디폴트 매개변수가 사용되고
+        // 값이 전달되면 받은 값으로 사용된다.
+        function rect(width=10,height=20){
+            document.write("width : "+ width + " ");
+            document.write("height : " + height + "<br>");
+            document.write("---------------------------<br>")
+            return width * height;
+        }
+        console.log(rect());
+        console.log(rect(30));
+        console.log(rect(100,200));
+
+        document.write("<hr>")
+
+        // 일반 매개변수와 디폴트 매개변수 같이 사용
+        // 디폴트 매개변수는 맨 뒤에 위치시키기
+        function showInfo(name, score, year=4){
+           document.write("name : " + name + "<br>");
+           document.write("score : " + score + "<br>");
+           document.write("year : " + year + "<br>"); 
+        }
+
+        showInfo();
+        showInfo("홍길동");
+        showInfo("홍길동",80);
+        showInfo("홍길동",80,25);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

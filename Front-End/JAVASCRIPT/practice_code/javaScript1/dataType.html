@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 타입</title>
+    <script>
+        let num1 = 15;
+        let num2 = 123.45;
+        let answer = 'y';
+        let name = "홍길동";
+        let address = '서울시 종로구 1번지';
+        let result = true;
+        let nothing;
+
+        //[취소] 누르면 null 값 반환
+        let input = prompt("데이터 타입 예제", "취소 버튼을 누르세요");
+
+        // 1. 숫자 연산
+        document.write("<br>정수 * 실수 : " + (num1 * num2));
+
+        // 2. 형 변환 : 실수값을 정수값으로 변환
+        document.write("<br>실수를 정수로 변환." + num2 + "->" + parseInt(num2));
+
+        // 3. 숫자를 문자열로 변환 : 15 + 123.45 = 15123.45
+        document.write("<br>숫자를 문자열로 변환 : " + String(num1) + num2.toString());
+
+        // 4. 문자열 * 문자열 : NaN
+        document.write("<br>문자열 * 문자열 : " + (name * address));
+
+        // 5. nothing 변수를 선언만 하고 값을 지정하지 않은 경우 : undefined
+        document.write("<br>nothing : " + nothing)
+
+        // 6. prompt() 대화상자에서 취소 버튼 누른 경우 : null
+        document.write("<br>input : " + input);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

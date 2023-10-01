@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF 연습문제2</title>
+    <script>
+        let id = "abcd";
+        let password = "1234";
+
+        let input_id = prompt("아이디 입력");
+        let input_password = prompt("비밀번호 입력");
+
+        if(input_id == id && input_password == password){ 
+            let alert(id+"님 반갑습니다.");
+            answer = prompt("대한민국의 수도는?");
+            if(answer == '서울')
+                document.write("정답입니다!");
+            else
+                document.write("틀렸습니다. 대한민국의 수도는 서울입니다.");
+        }
+        else{
+            document.write("로그인 실패. 종료합니다.");
+            alert("아이디 또는 비밀번호가 일치하지 않습니다.");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
