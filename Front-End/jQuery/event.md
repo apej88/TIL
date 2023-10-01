@@ -72,4 +72,4 @@
     - contextmenu (팝업메뉴) 출력
 
 #### 이벤트 발생 시 기본 동작을 중단하는 메소드
-    - preventDefault()
+- preventDefault()
