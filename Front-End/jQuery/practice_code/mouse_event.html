@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 이벤트</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // btn 버튼 클릭했을 때
+            $('#btn').on('click',function() {
+                alert("버튼 클릭");
+            });
+
+            // 마우스 올렸을 때 뗏을 때
+            $('#btn') //on 메소드를 2번 사용
+                .on('mouseover',function(){
+                    $(this).css('backgroundColor','yellow');
+                })
+                .on('mouseout',function(){
+                    $(this).css('backgroundColor','green');
+                });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn">클릭</button>
+</body>
+</html>
