@@ -10,6 +10,8 @@
 
 - [DBMS](https://github.com/apej88/TIL/blob/master/Database/DBMS.md)
 
+- [DCL](https://github.com/apej88/TIL/blob/master/Database/DCL.md)
+
 - [DDL](https://github.com/apej88/TIL/blob/master/Database/DDL.md)
 
 - [DML_join](https://github.com/apej88/TIL/blob/master/Database/DML_join.md)
