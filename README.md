@@ -6,7 +6,11 @@
 ## Index
 
 ### Database
+- [attribute](https://github.com/apej88/TIL/blob/master/Database/attribute.md)
+
 - [basic-concepts](https://github.com/apej88/TIL/blob/master/Database/basic-concepts.md)
+
+- [data_modeling](https://github.com/apej88/TIL/blob/master/Database/data_modeling.md)
 
 - [DBMS](https://github.com/apej88/TIL/blob/master/Database/DBMS.md)
 
@@ -14,11 +18,17 @@
 
 - [DDL](https://github.com/apej88/TIL/blob/master/Database/DDL.md)
 
+- [design](https://github.com/apej88/TIL/blob/master/Database/design.md)
+
 - [DML_join](https://github.com/apej88/TIL/blob/master/Database/DML_join.md)
 
 - [DML_SubQuery](https://github.com/apej88/TIL/blob/master/Database/DML_SubQuery.md)
 
 - [DML](https://github.com/apej88/TIL/blob/master/Database/DML.md)
+
+- [E-R_model](https://github.com/apej88/TIL/blob/master/Database/E-R_model.md)
+
+- [Entity](https://github.com/apej88/TIL/blob/master/Database/Entity.md)
 
 - [MySQL_inner_function](https://github.com/apej88/TIL/blob/master/Database/MySQL_inner_function.md)
 
