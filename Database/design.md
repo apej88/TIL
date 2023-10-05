@@ -8,7 +8,7 @@
 
 ## 데이터베이스 설계 순서
 
-![database_design_order](../image/database_design_order.png)
+![database_design_order](image/database_design_order.png)
 
 ### 요구사항 분석
 - 데이터베이스 사용자가 필요로 하는 요구를 분석하고 명세서를 작성하는 단계
