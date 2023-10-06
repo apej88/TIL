@@ -30,11 +30,17 @@
 
 - [Entity](https://github.com/apej88/TIL/blob/master/Database/Entity.md)
 
+- [IE_notation](https://github.com/apej88/TIL/blob/master/Database/IE_notation.md)
+
 - [MySQL_inner_function](https://github.com/apej88/TIL/blob/master/Database/MySQL_inner_function.md)
 
 - [MySQL_stored_procedure](https://github.com/apej88/TIL/blob/master/Database/MySQL_stored_procedure.md)
 
 - [MySQL_view](https://github.com/apej88/TIL/blob/master/Database/MySQL_view.md)
+
+- [normalization](https://github.com/apej88/TIL/blob/master/Database/normalization.md)
+
+- [relationship](https://github.com/apej88/TIL/blob/master/Database/relationship.md)
 
 ### Front-End
 
