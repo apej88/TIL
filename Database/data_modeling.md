@@ -25,18 +25,40 @@
 
 ![modeling_order](image/modeling_order.png)
 
-### 개념적 모델링
+## 개념적 모델링
 - 현실 세계를 추상적 개념인 개체 타입과 관계 타입으로 표현 (테이블 / 테이블과 테이블의 관계 설정)
 - 요구사항 분석 결과를 토대로 업무의 핵심적인 개념을 구분하고 개체(entity) 추출, 관계 정의
 - ER 다이어그램 (ERD: Entity Relationship Diagram) 이라는 표준화된 그림으로 표현
 
 ![modeling1](image/modeling1.png)
 
-### 논리적 모델링
+## 논리적 모델링
 - 실제 데이터베이스로 구현하기 위한 모델을 만드는 과정
 - 개념적 모델링에서 만든 ER 다이어그램을 사용하고자 하는 DBMS에 맞게 사상(맵핑 : mapping)
 
 ![modeling2](image/modeling2.png)
+
+## E-R 모델을 관계 데이터 모델로 사상 (논리적 모델링)
+- 개념적 모델링에서 만든 ER 모델을 실제 데이터베이스를 구축하기 위해 사용하고자 하는 DBMS 에 맞게 사상
+
+![logic_modeling](image/logic_modeling.png)
+
+- 관계 맵핑 예
+
+![logic_modeling_ex](image/logic_modeling_ex.png)
+
+### 교수/과목/강좌 관계의 논리적 모델링 예
+- 교수 (교수번호, 성명, 학과, 전공)
+- 과목 (과목번호, 과목명, 학점)
+- 강좌 (강좌번호, 과목번호(FK), 교수번호(FK), 시간)
+- 또는 강좌 (과목번호(FK), 교수번호(FK), 시간)
+
+### 고객/상품/주문 관계의 논리적 모델링 예
+- 고객 (고객번호, 성명, 전화, 주소)
+- 상품 (상품번호, 상품명, 가격, 제조회사)
+- 주문 (주문번호, 고객번호(FK), 상품번호(FK), 주문일, 주문수량)
+- 또는 주문 (고객번호(FK), 상품번호(FK), 주문일, 주문수량)
+
 
 #### 논리적 모델링 과정 중 수행 작업
 - 개념적 모델링에서 추출하지 않았던 상세 속성 모두 추출
@@ -48,3 +70,10 @@
 - 데이터베이스가 최적의 성능을 낼 수 있도록 DBMS의 특성에 맞게 저장 구조 정의
 
 ![modeling3](image/modeling3.png)
+
+
+![physic_modeling](image/physic_modeling.png)
+
+## 전체 모델링 과정
+
+![modeling](image/modeling.png)
