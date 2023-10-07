@@ -32,6 +32,10 @@
 
 - [IE_notation](https://github.com/apej88/TIL/blob/master/Database/IE_notation.md)
 
+- [MongoDB_cmd](https://github.com/apej88/TIL/blob/master/Database/MongoDB_cmd.md)
+
+- [MongoDB_python](https://github.com/apej88/TIL/blob/master/Database/MongoDB_python.md)
+
 - [MySQL_inner_function](https://github.com/apej88/TIL/blob/master/Database/MySQL_inner_function.md)
 
 - [MySQL_stored_procedure](https://github.com/apej88/TIL/blob/master/Database/MySQL_stored_procedure.md)
@@ -39,6 +43,8 @@
 - [MySQL_view](https://github.com/apej88/TIL/blob/master/Database/MySQL_view.md)
 
 - [normalization](https://github.com/apej88/TIL/blob/master/Database/normalization.md)
+
+- [NoSQL](https://github.com/apej88/TIL/blob/master/Database/NoSQL.md)
 
 - [relationship](https://github.com/apej88/TIL/blob/master/Database/relationship.md)
 
