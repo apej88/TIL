@@ -104,4 +104,16 @@
 
 - [markdown](https://github.com/apej88/TIL/blob/master/Git/markdown.md)
 
+### Python
 
+- [basic](https://github.com/apej88/TIL/blob/master/Python/basic.md)
+
+- [constant](https://github.com/apej88/TIL/blob/master/Python/constant.md)
+
+- [data-type](https://github.com/apej88/TIL/blob/master/Python/data-type.md)
+
+- [literal](https://github.com/apej88/TIL/blob/master/Python/literal.md)
+
+- [operators](https://github.com/apej88/TIL/blob/master/Python/operators.md)
+
+- [variables](https://github.com/apej88/TIL/blob/master/Python/variables.md)
