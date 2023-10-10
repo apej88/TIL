@@ -20,7 +20,7 @@
 
 - [design](https://github.com/apej88/TIL/blob/master/Database/design.md)
 
-- [DML_join](https://github.com/apej88/TIL/blob/master/Database/DML_join.md)
+- [DML_Join](https://github.com/apej88/TIL/blob/master/Database/DML_Join.md)
 
 - [DML_SubQuery](https://github.com/apej88/TIL/blob/master/Database/DML_SubQuery.md)
 
