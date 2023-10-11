@@ -110,10 +110,22 @@
 
 - [constant](https://github.com/apej88/TIL/blob/master/Python/constant.md)
 
+- [control](https://github.com/apej88/TIL/blob/master/Python/control.md)
+
 - [data-type](https://github.com/apej88/TIL/blob/master/Python/data-type.md)
+
+- [date](https://github.com/apej88/TIL/blob/master/Python/date.md)
+
+- [dictionary](https://github.com/apej88/TIL/blob/master/Python/dictionary.md)
 
 - [literal](https://github.com/apej88/TIL/blob/master/Python/literal.md)
 
 - [operators](https://github.com/apej88/TIL/blob/master/Python/operators.md)
+
+- [set](https://github.com/apej88/TIL/blob/master/Python/set.md)
+
+- [string](https://github.com/apej88/TIL/blob/master/Python/string.md)
+
+- [tuple](https://github.com/apej88/TIL/blob/master/Python/tuple.md)
 
 - [variables](https://github.com/apej88/TIL/blob/master/Python/variables.md)
