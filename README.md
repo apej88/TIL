@@ -118,9 +118,19 @@
 
 - [dictionary](https://github.com/apej88/TIL/blob/master/Python/dictionary.md)
 
+- [function](https://github.com/apej88/TIL/blob/master/Python/function.md)
+
+- [list](https://github.com/apej88/TIL/blob/master/Python/list.md)
+
 - [literal](https://github.com/apej88/TIL/blob/master/Python/literal.md)
 
+- [main_function](https://github.com/apej88/TIL/blob/master/Python/main_function.md)
+
+- [module](https://github.com/apej88/TIL/blob/master/Python/module.md)
+
 - [operators](https://github.com/apej88/TIL/blob/master/Python/operators.md)
+
+- [package](https://github.com/apej88/TIL/blob/master/Python/package.md)
 
 - [set](https://github.com/apej88/TIL/blob/master/Python/set.md)
 
