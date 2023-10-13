@@ -118,6 +118,10 @@
 
 - [dictionary](https://github.com/apej88/TIL/blob/master/Python/dictionary.md)
 
+- [exception](https://github.com/apej88/TIL/blob/master/Python/exception.md)
+
+- [file](https://github.com/apej88/TIL/blob/master/Python/file.md)
+
 - [function](https://github.com/apej88/TIL/blob/master/Python/function.md)
 
 - [list](https://github.com/apej88/TIL/blob/master/Python/list.md)
@@ -131,6 +135,8 @@
 - [operators](https://github.com/apej88/TIL/blob/master/Python/operators.md)
 
 - [package](https://github.com/apej88/TIL/blob/master/Python/package.md)
+
+- [regular_expressions](https://github.com/apej88/TIL/blob/master/Python/regular_expressions.md)
 
 - [set](https://github.com/apej88/TIL/blob/master/Python/set.md)
 
