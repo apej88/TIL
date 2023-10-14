@@ -101,3 +101,48 @@ tv.volume = 20
         - 클래스명을 붙여서 접근(Counter.count)
         - 메소드 외부에서 정의
 - 멤버 메소드
+
+# 추상 클래스 (Abstract Class)
+## 추상 (Abstract)
+- 구체적으로 완성되지 않았다는 의미 (미완성)
+
+## 추상 클래스 (Abstract Class)
+- 추상 메소드를 포함하고 있는 클래스
+- 즉, body가 구현되지 않은 미완성 메소드를 포함하고 있다는 의미
+- 구체적인 내용은 구현하지 않고 전체적인 틀만 갖춘 상황
+- 상속 받는 클래스에서 용도에 맞게 구체적으로 구현해서 완성 (메소드 오버라이딩)
+- 추상 클래스는 미완성 메소드가 포함되어 있기 때문에 객체 생성 불가
+
+## 추상 클래스 형식
+- 반드시 abc 모듈 import
+- {abc} 내장 패키지에서 ABCMeta라는 Abstract Base Class Meta 클래스와 abstractmethod 지시자 import 
+```python
+from abc import ABCMeta
+from abc import abstractmethod
+```
+- 추상 클래스에는 metaclass=ABCMeta 인자를 옵션으로 설정하고
+- 추상 메소드에는 @abstractmethod 어노테이션 붙임
+```python
+from abc import *
+class 추상클래스명(metaclass=ABCMeta):
+     @abstractmethod
+        def 추상메소드(self):
+            pass
+```
+
+## 추상 클래스 목적
+- 클래스 설계 규격을 정해놓는 것
+- 서브 클래스에서 필요로 하는 대부분의 기능을 메소드로 정의(미완성)하여 두고 서브 클래스가 상속받아 활용할 수 있도록 함
+- 서브 클래스에서 반드시 구현해야 하는 기능만을 추상 메소드로 선언하여 서브 클래스에서 구현하도록 하는 것
+
+## 어노테이션(Annotation) : @abstractmethod
+- 프로그램에게 추가적인 정보를 제공해주는 메타데이터(metadata)
+- 실행 시(런타임시) 특정 기능 실행하도록 정보 제공
+- @ 붙여서 사용
+
+## 다형성 (Polymorphism)
+- 동일한 타입이지만 실행 결과가 다양한 객체를 이용할 수 있는 성질
+- 코드 측면에서 보면 하나의 타입에 여러 객체를 대입함으로써 다양한 기능을 이용할 수 있게 됨
+- item 객체
+    - Product 클래스의 객체 대입
+    - Book 클래스의 객체 대입
