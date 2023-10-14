@@ -41,3 +41,27 @@ class 자식클래스명(부모클래스명):
 # 자식 클래스의 생성자에서 받아서 부모 클래스의 생성자에게 전달
  super().__init__(emp_no, emp_name, emp_dpt)
 ```
+---
+## 다중 상속
+- 파이썬에서는 다중 상속 가능
+    - 참고 : C#, Java 에서는 다중 상속 불가
+    - C++ 다중 상속 가능
+- 여러 개의 클래스로부터 상속 받을 수 있음
+- 즉, 부모 클래스가 여러 개 가능 (개수 제한 없음)
+```python
+class Child(Parent1, Parent2, …)
+```
+### 참고
+- 다중 상속 시 다이아몬드 문제 발생
+    - A를 B와 C가 상속 받고,
+    - B와 C를 D과 상속 받는 경우
+    - 복잡하게 얽힌 관계 형성
+- 다이아몬드 상속 대한 해결책
+    - 메서드 탐색 순서(MRO)를 따름
+    - Method Resolution Order
+```python
+Cat.mro()
+print(Cat.mro())
+[<class 'Cat.Cat'>, <class 'Animal.Animal'>, <class 'object'>]
+# 내 클래스, 부모 클래스, 최상위 클래스 object
+```
