@@ -108,6 +108,8 @@
 
 - [basic](https://github.com/apej88/TIL/blob/master/Python/basic.md)
 
+- [class](https://github.com/apej88/TIL/blob/master/Python/class.md)
+
 - [constant](https://github.com/apej88/TIL/blob/master/Python/constant.md)
 
 - [control](https://github.com/apej88/TIL/blob/master/Python/control.md)
@@ -124,6 +126,8 @@
 
 - [function](https://github.com/apej88/TIL/blob/master/Python/function.md)
 
+- [inheritance](https://github.com/apej88/TIL/blob/master/Python/inheritance.md)
+
 - [list](https://github.com/apej88/TIL/blob/master/Python/list.md)
 
 - [literal](https://github.com/apej88/TIL/blob/master/Python/literal.md)
@@ -133,6 +137,8 @@
 - [module](https://github.com/apej88/TIL/blob/master/Python/module.md)
 
 - [operators](https://github.com/apej88/TIL/blob/master/Python/operators.md)
+
+- [overriding](https://github.com/apej88/TIL/blob/master/Python/overriding.md)
 
 - [package](https://github.com/apej88/TIL/blob/master/Python/package.md)
 
