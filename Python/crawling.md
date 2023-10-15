@@ -84,3 +84,40 @@ for a in a_list:
         - '>' : 자식 선택
 - select_one('태그명')
     - 1개의 태그 추출
+
+# 데이터를 csv 파일로 저장
+- 저장하고자 하는 데이터들을 리스트로 생성
+- 데이터프레임 생성
+- 파일로 저장
+## (1) 섹션 메뉴와 링크를 리스트로 생성
+- 빈 리스트 생성
+```python
+section = []
+link = []
+```
+- 리스트에 추가
+```python
+lis = ul[0].findAll('li')
+for li in lis:
+    a_list = li.find('a')
+    section.append(a_list.text)
+    link.append(a_list['href'])
+```
+
+## (2) 데이터프레임 생성
+```python
+# 데이터프레임 생성 위해 모듈 임포트
+import pandas as pd
+# 열 이름과 리스트로 데이터프레임 저장
+# pd.DataFrame({'Column name' : list, 'Column name' : list})
+news_section_df = pd.DataFrame({'section' : section, 'link' : link})
+```
+
+## (3) 파일로 저장
+- 데이터프레임.to_csv('파일경로 및 파일명', index=0)
+```python
+# 파일 저장
+news_section_df.to_csv('./파일경로/파일명', index=0)
+# 파일 로드
+section_menu_df = pd.read_csv('./파일경로/파일명')
+```
