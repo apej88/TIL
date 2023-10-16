@@ -148,6 +148,10 @@
 
 - [set](https://github.com/apej88/TIL/blob/master/Python/set.md)
 
+- [spotipy_ex](https://github.com/apej88/TIL/blob/master/Python/spotipy_ex.md)
+
+- [spotipy](https://github.com/apej88/TIL/blob/master/Python/spotipy.md)
+
 - [string](https://github.com/apej88/TIL/blob/master/Python/string.md)
 
 - [tuple](https://github.com/apej88/TIL/blob/master/Python/tuple.md)
