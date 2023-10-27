@@ -147,3 +147,54 @@ Output is truncated. View as a scrollable element or open in a text editor. Adju
 
 Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
 ```
+
+## 트랙의 audio feature 정보 뽑기
+```python
+track_data = {
+    'album_id':[],
+    'acousticness':[],
+    'danceability':[],
+    'energy':[],
+    'loudness':[],
+    'speechiness':[],
+    'tempo':[],
+    'valence':[],
+    'instrumentalness':[]
+    # 더 다양한 특징 있음
+}
+```
+```python
+track_id = '348NF6vX0Yh22xvH0EZEro'
+# list for을 이용하면 여러 트랙정보 저장 가능
+audio_features = sp.audio_features(track_id)
+track_data2['acousticness'].append(audio_features[0]['acousticness'])
+track_data2['danceability'].append(audio_features[0]['danceability'])
+track_data2['energy'].append(audio_features[0]['energy'])
+track_data2['loudness'].append(audio_features[0]['loudness'])
+track_data2['speechiness'].append(audio_features[0]['speechiness'])
+track_data2['tempo'].append(audio_features[0]['tempo'])
+track_data2['valence'].append(audio_features[0]['valence'])
+track_data2['instrumentalness'].append(audio_features[0]['instrumentalness'])
+```
+
+```
+audio_features
+[{'danceability': 0.911,
+  'energy': 0.585,
+  'key': 7,
+  'loudness': -8.078,
+  'mode': 0,
+  'speechiness': 0.0735,
+  'acousticness': 0.0945,
+  'instrumentalness': 0,
+  'liveness': 0.134,
+  'valence': 0.851,
+  'tempo': 117.06,
+  'type': 'audio_features',
+  'id': '348NF6vX0Yh22xvH0EZEro',
+  'uri': 'spotify:track:348NF6vX0Yh22xvH0EZEro',
+  'track_href': 'https://api.spotify.com/v1/tracks/348NF6vX0Yh22xvH0EZEro',
+  'analysis_url': 'https://api.spotify.com/v1/audio-analysis/348NF6vX0Yh22xvH0EZEro',
+  'duration_ms': 210948,
+  'time_signature': 4}]
+```
