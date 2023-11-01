@@ -1,0 +1,2 @@
+
+        queue.front = None

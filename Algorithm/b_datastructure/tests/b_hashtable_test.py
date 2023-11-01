@@ -38,8 +38,9 @@ class HashTableTest(unittest.TestCase):
         for e in self.table:
             print(e)
 
-
+    def test_remove(self):
+        self.table.remove("d")
+        print(self.table)
     
-
 if __name__ == '__main__':
     unittest.main()
