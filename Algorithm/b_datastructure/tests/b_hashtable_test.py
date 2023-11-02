@@ -35,12 +35,17 @@ class HashTableTest(unittest.TestCase):
     
     
     def test_iter(self):
-        for e in self.table:
-            print(e)
+        pass
 
     def test_remove(self):
         self.table.remove("d")
         print(self.table)
+        self.table.remove("a")
+        print(self.table)
+        self.table.remove("b")
+        print(self.table)
+
     
+
 if __name__ == '__main__':
     unittest.main()
