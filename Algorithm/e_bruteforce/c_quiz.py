@@ -15,4 +15,14 @@ def doom_day(n):
     return arr
 
 def q2(arr):
-    pass
+    s = sum(arr)
+    for i in range(len(arr) -1):
+        for j in range(i+1, len(arr)):
+            if s - (arr[i] + arr[j]) == 100:
+                a, b = arr[i], arr[j]
+                arr.remove(a)
+                arr.remove(b)
+                return arr
+    
+    return None     
+    

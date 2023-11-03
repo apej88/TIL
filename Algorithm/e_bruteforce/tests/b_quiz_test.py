@@ -15,7 +15,7 @@ class QuizTest(unittest.TestCase):
         
         arr.append(round(random.randrange(1,20)))
         arr.append(round(random.randrange(1,20)))
-        self.assertEqual(sum(q2(arr) == 100))
+        self.assertEqual(sum(q2(arr)), 100)
         
 
 if __name__ == '__main__':
