@@ -1,4 +1,4 @@
-# 사용자로부터 줄 수와 칸수를 입력받아서
+# 사용자로부터 줄 수와 칸 수를 입력받아서
 # 사각형을 별로 그리는 이중반복문 작성하시오
 
 # 출력예시
@@ -8,29 +8,29 @@
 # ****
 # ****
 def q1():
-    row = int(input("줄 수 : "))
-    col = int(input("칸 수 : "))
-    for r in range (row):
-        for c in range(col):
-            print('*', end='')
+    row = int(input("줄 수: "))
+    col = int(input("칸 수: "))
+    
+    for i in range(row):
+        for j in range(col):
+            print("*", end="")
         print()
-# q1()
-
+        
 
 # 출력예시
 # 줄 수 : 5
-# *
+# *             별의 개수 : n
 # **
 # ***
 # ****
 # *****
 def q2():
-    row = int(input("줄 수 : "))
-    for i in range(row):
-        for j in range(i+1):
-            print('*', end='')
-        print()
-# q2()
+    row = int(input("줄 수: "))
+    for n in range(1, row+1):
+        for j in range(n):
+            print("*", end="")
+        print()     
+        
 
 # 사용자로부터 정수를 하나 입력받아
 # 사각형을 별로 그리는 데, 대각선에는 숫자를 출력하시오
@@ -42,15 +42,8 @@ def q2():
 # **3*
 # ***4
 def q3():
-    num = int(input("숫자 : "))
-    for i in range(num):
-        for j in range(num):
-            if i==j:
-                print(i+1, end='')
-            else:
-                print('*', end='')
-        print()
-# q3()
+    pass
+
 
 # 사용자로부터 정수를 하나 입력받아
 # 정수만큼의 높이를 가지는 직각삼각형을 * 을 사용해 그리세요
@@ -62,78 +55,96 @@ def q3():
 # ***4
 # ****5
 def q4():
-    num = int(input("숫자 : "))
-    for i in range(num):
-        for j in range(i+1):
-            if j == i:
-                print(i+1, end='')
-            else:
-                print('*', end='')
-        print()
-# q4()
+    pass
+
 
 # 숫자 : 5
 # 방향(+ 또는 -) : +
-# 	   *				
-# 	  ***				
-# 	 *****				
-# 	*******
+# 	   *				n  : 1부터 1씩 증가
+# 	  ***			    *  : 2n-1
+# 	 *****			   공백 : cnt - n	
+#   *******
 #  *********
 
 # 숫자 : 5
-# 방향(+ 또는 -) : -
-# *********		   
-#  *******			   
+# 방향(+ 또는 -) : -    n  :   cnt부터 1씩 작아지는 값 
+# *********		        *  :  2n-1
+#  *******			  공백  :  0부터 1씩 증가 
 #   *****			  
 #    ***
 #     *
 def q5():
-    num = int(input('숫자 : '))
-    cha = input('방향(+ 또는 -) : ')
-    if cha=='+':
-        for i in range(num):
-            for j in range(num-i-1):
-                print(' ', end='')
-            for j in range(2*i+1):
-                print('*', end='')
+    cnt = int(input("숫자 : "))
+    dir = input("방향 ( +, -) : ")
+    
+    if(dir == "+"):                           
+        n = 1
+        for i in range(cnt):
+            for i in range(cnt - n):
+                print(" ", end="")
+            
+            for j in range(2*n-1):
+                print("*", end="")
+            
             print()
-    elif cha=='-':
-        for i in range(num):
-            for j in range(i):
-                print(' ', end='')
-            for j in range(2*num - 2*i - 1):
-                print('*', end='')
+            n += 1               
+                
+    elif(dir == "-"):
+        n = cnt
+        white_space = 0
+        for i in range(cnt):
+            for j in range(white_space):
+                print(" ", end="")
+
+            for j in range(2 * n - 1):
+                print("*", end="")
+
             print()
-# q5()
+            n -= 1
+            white_space += 1           
+    
+    else:
+        print("방향을 올바르게 입력하세요")
+        
 
 # 다이아몬드 별찍기
 # 사용자로 부터 2이상의 자연수를 입력 받아
 # 한 변의 길이가 사용자의 입력값인 다이아몬드를 그려보시오
-#     *     0
-#    ***    1
-#   *****   2
-#  *******  3
-# ********* 4 num=5
-#  *******  5 10
-#   *****   6 12
-#    ***    7 14
-#     *     8 16
-# 0 1 2 3 4 5 6 7 8
-# 4 3 2 1 0 1 2 3 4 ' '
-# 1 3 5 7 9 7 5 3 1 '*'
-# 5 6 7 8 9 8 7 6 5 합
+#     *
+#    ***
+#   *****
+#  *******
+# *********
+#  *******
+#   *****
+#    ***
+#     *
 def q6():
-    num = int(input('마름모 길이 : '))
-    for i in range(num*2 - 1):
-        if i<num:
-            for j in range(num-i-1):
-                print(' ', end='')
-            for j in range(i*2+1):
-                print('*', end='')
-        else:
-            for j in range(i-num+1):
-                print(' ', end='')
-            for j in range(num*2 - (i-num)*2 - 3):
-                print('*', end='')
+    cnt = int(input("한 변의 길이 : "))
+    n = 1
+    white_space = cnt - n
+    for i in range(cnt):
+        for i in range(white_space):
+            print(" ", end="")
+        
+        for j in range(2*n-1):
+            print("*", end="")
+        
         print()
-# q6()
+        white_space -= 1
+        n += 1
+        
+    n = cnt-1
+    white_space = 1    
+    for i in range(cnt):
+        for j in range(white_space):
+            print(" ", end="")
+
+        for j in range(2 * n - 1):
+            print("*", end="")
+
+        print()
+        n -= 1
+        white_space += 1    
+    
+      
