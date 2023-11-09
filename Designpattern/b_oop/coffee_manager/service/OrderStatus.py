@@ -1,5 +1,7 @@
 from enum import Enum
 
+from service.SeasonCoffee import SeasonCoffee
+
 class OrderStatus(Enum):
     PREPARE = (-1, '주문 생성을 준비중입니다.')
     OK = (0, '주문 생성 성공')
@@ -18,8 +20,11 @@ class OrderStatus(Enum):
         
         if order_cnt > coffee.get_stock():
             return OrderStatus.FAIL_CAUSE_SOLDOUT
-        else:
-            return OrderStatus.OK
+        
+        if isinstance(coffee, SeasonCoffee) and not coffee.is_season():
+            return OrderStatus.FAIL_CAUSE_SEASON
+        
+        return OrderStatus.OK
         
     def is_ok(self):
         return self == OrderStatus.OK
